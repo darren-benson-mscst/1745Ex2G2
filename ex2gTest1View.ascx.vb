@@ -29,12 +29,13 @@ Namespace dbenson.Ex2GTest1
             MyBase.OnLoad(e)
 
             If Not Page.IsPostBack Then
-                firstNameTextBox.Text = DirectCast(Settings("First Name:"), String)
+                Dim txtField As Object = Nothing
+                txtField.Text = DirectCast(Settings("field"), String)
             End If
         End Sub
 
         Protected Sub cmdSave_Click(sender As Object, e As EventArgs) Handles cmdSave.Click
-            ModuleController.Instance.UpdateModuleSetting(ModuleId, "First Name:", firstNameTextBox.Text)
+            ModuleController.Instance.UpdateModuleSetting(ModuleId, "field", txtField.Text)
             Skins.Skin.AddModuleMessage(Me, "Update Successful", Skins.Controls.ModuleMessage.ModuleMessageType.GreenSuccess)
         End Sub
 
