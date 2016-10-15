@@ -34,8 +34,8 @@ Namespace dbenson.Ex2GTest1
         End Sub
 
         Protected Sub cmdSave_Click(sender As Object, e As EventArgs) Handles cmdSave.Click
-'ModuleController.Instance.UpdateModuleSetting(ModuleId, "First Name:", firstNameTextBox.Text)
-            'Skins.Skin.AddModuleMessage(Me, "Update Successful", Skins.Controls.ModuleMessage.ModuleMessageType.GreenSuccess)
+            ModuleController.Instance.UpdateModuleSetting(ModuleId, "First Name:", firstNameTextBox.Text)
+            Skins.Skin.AddModuleMessage(Me, "Update Successful", Skins.Controls.ModuleMessage.ModuleMessageType.GreenSuccess)
         End Sub
 
         Protected Sub cmdCancel_Click(sender As Object, e As EventArgs) Handles cmdCancel.Click
