@@ -29,7 +29,6 @@ Namespace dbenson.Ex2GTest1
             MyBase.OnLoad(e)
 
             If Not Page.IsPostBack Then
-                Dim txtField As Object = Nothing
                 txtField.Text = DirectCast(Settings("field"), String)
             End If
         End Sub
