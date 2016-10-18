@@ -42,11 +42,12 @@ Namespace dbenson.Ex2GTest1
 
         End Sub
 
-#End Region
-
         Protected Sub MessageButton_Click(sender As Object, e As EventArgs) Handles MessageButton.Click
             MessageLabel.Text = "Hello " & firstNameTextBox.Text & " " & lastNameTextBox.Text
         End Sub
+#End Region
+
+       
     End Class
 
 End Namespace
