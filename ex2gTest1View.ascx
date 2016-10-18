@@ -7,6 +7,12 @@
     <fieldset>
 
         <div class="dnnFormItem">
+            <dnn:label id="plField" runat="server" text="Field" helptext="Enter a value" controlname="txtField" />
+
+            <asp:textbox id="txtField" runat="server" maxlength="255" />
+        </div>
+        
+        <div class="dnnFormItem">
             <dnn:label id="plFirstName" runat="server" text="First Name:" helptext="Enter your first name" controlname="firstNameTextBox" />
             <asp:textbox id="firstNameTextBox" runat="server" maxlength="25" />
         </div>
